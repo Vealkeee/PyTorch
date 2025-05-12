@@ -38,7 +38,6 @@ model = nn.Linear(input_size, output_size)
 
 print(f'Prediction before training: f(5) = {model(AV).item():.3f}')
 
-# training
 learning_rate = 0.01
 n_iters = 2000
 
@@ -46,6 +45,7 @@ n_iters = 2000
 loss = nn.MSELoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
+# training
 for epoch in range(n_iters):
     # prediction
     y_predicted = model(X)
