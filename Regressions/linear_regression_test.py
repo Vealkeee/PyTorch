@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import matplotlib.pyplot as plt
 
-from linear_regression import LinearRegression
+from Regressions.linear_regression import LinearRegression
 
 # creating a graph for a linearRegression thing.
 X, y = datasets.make_regression(n_samples=100, n_features=1, noise=20, random_state=4)
